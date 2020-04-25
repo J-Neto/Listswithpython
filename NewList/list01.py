@@ -3,14 +3,21 @@
 este vetor C. Obs.: intersecção é quando um valor estiver nos dois vetores. Considere que não há elementos duplicados em cada um
 dos vetores.
 '''
+from random import randint
 
-a = [1,2,3,4,5]
-b = [2,4,6,7,8]
+a = []
+b = []
 c = []
+
+for i in range(10):
+    a.append(int(input(f"Digite o número na primeira linha, posição {i}: ")))
+    b.append(int(input(f"Digite o número na segunda linha, posição {i}: ")))   
 
 for i in range(len(a)):
     for j in range(len(b)):
         if(b[j] == a[i]):
             c.append(b[j])
 
+print(a)
+print(b)
 print(c)
